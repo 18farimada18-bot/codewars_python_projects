@@ -1,11 +1,6 @@
 def dna_to_rna(dna):
-    # split each letter into an item in a list
     dna_list = list(dna)
-    # iterate thru the list
-    for d in dna_list:
-        if d == "T":
-            # if T, change to u via reassignment
-            dna_list[dna_list.index(d)] = "U"
-    # mush together and return
+    for i in dna_list:
+        if i =="T":
+            dna_list[dna_list.index("T")] = "U"
     return "".join(dna_list)
-​
